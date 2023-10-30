@@ -23,3 +23,29 @@ let like ="true"; //boolean
     firstName: "Shalala",
     color: "Doe",
  }   //object 
+
+
+ let road =8600;
+ let speed =120;
+ let time =road/speed;
+ console.log(time);
+
+
+ let birthYear =2002;
+ let year =2023;
+ let old =year-birthYear;
+ console.log("Yasiniz:" , old);
+
+
+
+ let nigar =60;
+ let selale =90;
+ let selime =90;
+ let nazrin =70;
+ let briliant =60;
+ let gulnar =80;
+ let shebnem =90;
+ let guller =80;
+ let average =( nigar + selale + selime + nazrin + briliant + gulnar + shebnem + guller)/8;
+ console.log("telebelerin ortalamasi:", average)
+
