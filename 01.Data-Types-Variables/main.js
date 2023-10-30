@@ -1,3 +1,4 @@
+
 let firstName = "Shalala";
 let lastName ="Aliyeva";
 let fullName;
@@ -12,7 +13,7 @@ let age ="21";
 let personInfo = fullName + "." +  " I am a " + job +"." +" I live in "+ country +" I am "+ age +" years old.";
 console.log(personInfo)
 
-// Task2
+         // Task2
 
 
 let lenght ="16"; //number
@@ -24,18 +25,23 @@ let like ="true"; //boolean
     color: "Doe",
  }   //object 
 
+          //TASK-3
 
  let road =8600;
  let speed =120;
- let time =road/speed;
+ let time =(road/speed)*60;
  console.log(time);
 
+
+
+             //task-4
 
  let birthYear =2002;
  let year =2023;
  let old =year-birthYear;
  console.log("Yasiniz:" , old);
 
+                //Task-5
 
 
  let nigar =60;
