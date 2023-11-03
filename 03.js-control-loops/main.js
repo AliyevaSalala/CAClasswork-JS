@@ -74,24 +74,23 @@
 
 //1-den 255e qeder 3 bolunenlerde "Fizz", 5e bolunenlerde"Buzz", 3 ve 5 bolunenlerde "FizzBuzz"
 
-// let a=0;
-// while (a<255) {
-//     a++;
-//     if(a%3==0){
-//         console.log(`${a} Fizz`)
-//     } if(a%5==0){
-//         console.log(  `${a} Buzz`)
-//     } if(a%3==0 && a%5==0){
-//         console.log(`${a} FizzBuzz`)
-//     }
-
-// }
+let a = 0;
+while (a < 255) {
+  a++;
+  if (a % 3 == 0 && a % 5 == 0) {
+    console.log(`${a} FizzBuzz`);
+  } else if (a % 3 == 0) {
+    console.log(`${a} Fizz`);
+  } else if (a % 5 == 0) {
+    console.log(`${a} Buzz`);
+  }
+}
 
 // Calculating the Factorial of the Number Entered bt the User:
 
-let a = 5;
-let factorial = 1;
-for (let i = 1; i<a; i++) {
-    factorial *=i
-    
-}    console.log(`factorial ${factorial}`)
+// let a = 5;
+// let factorial = 1;
+// for (let i = 1; i<a; i++) {
+//     factorial *=i
+
+// }    console.log(`factorial ${factorial}`)
