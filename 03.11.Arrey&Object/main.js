@@ -87,22 +87,49 @@
 // let reverse = numbers.reverse();
 // console.log("Reverse: ", reverse)
 
+
+
 //Task-8
-//verilmis array-da object-lerin  key-lerini value-lerini consola-a cixardin.
 
-let students = [
-  {
-  name: "Sharifa",
-  surname: "Aliyeva",
-  studentNumber: "12345",
-  grades:[85, 75, 92]
+//Verilmis array-in tek elementlerinin indeksini capa veren proqram tertib edin
 
-},
-{
-  name:"Nazrin",
-  surname:"Muxtarova",
-  studentNumber:"6789",
-  grades:[72, 87, 68]
+
+let arr = [3, 8, 2, 5, 4, 10, 7, 6];
+for (let i = 0; i < arr.length; i++) {
+if(arr[i]%2===1){
+  console.log([i])
+}
+}
+
+
+
+// Task-9
+
+
+//Verilmis array-in tek indeksli elementlerini capa veren proqram tertib edin
+
+
+for (let i = 0; i < arr.length; i++) {
+ if([i]%2===1){
+  console.log(arr[i]);
+ }
 
 }
-]
+
+// Task-10
+
+// Verilmis array-in cut elementlerinin max elementini capa veren proqram tertib edin.
+
+// let max = arr[0];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] %2 === 0 && max < arr[i]) {
+//     max = arr[i];
+//   }
+// }console.log("Let num:", max)
+
+
+//Task-11
+
+//Verilmis eddedin array-de olub olmadigini teyin eden proqram tertib edin.
+
+
