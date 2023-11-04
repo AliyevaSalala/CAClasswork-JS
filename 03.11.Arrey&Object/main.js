@@ -38,12 +38,71 @@
 
 //verilmis arrayda musbet reqemleri cixardin/
 
-let results = [12, -5, 6, -3, 34, -1, 23];
-let positive = [];
-for (let i = 0; i < results.length; i++) {
-  if (results[i] > 0) {
-    positive =results[i];
-    console.log(positive);
-  }
-}
+// let results = [12, -5, 6, -3, 34, -1, 23];
+// let positive = [];
+// for (let i = 0; i < results.length; i++) {
+//   if (results[i] > 0) {
+//     positive =results[i];
+//     console.log(positive);
+//   }
+// }
 
+//Task-5
+
+// Verilmis array-da index-leri n qeder tekrar ederek consol-a cixardin.
+
+// let originalArray = [1, 2, 3, 4];
+// let repeatArray = [];
+// let n = 3;
+
+// for (let i = 0; i < originalArray.length; i++) {
+//   for (let j = 0; j < n; j++) {
+//     repeatArray.push(originalArray[i])
+//   }
+// }
+// console.log(repeatArray);
+
+//Task-6
+
+//Verilmis array-da tek ve cut ededleri ayri-ayri consol'a cixardin.
+
+// let numbers = [12, 45, 6, 78, 34, 99, 33];
+// let oddNumber = numbers[0];
+// let evenNumber = numbers[0];
+// for (let i = 0; i < numbers.length; i++) {
+//   if (numbers[i] % 2 === 1) {
+//     oddNumber= numbers[i];
+//     console.log("OddNumber: ", oddNumber);
+//   } else if (numbers[i] % 2 === 0) {
+//     evenNumber = numbers[i];
+//     console.log("EvenNumber: ", evenNumber);
+//   }
+// }
+
+//Task-7
+
+// Verilmis  array-da ededleri ters cevirib consol-a cixardin.
+
+// let numbers = [1, 2, 3, 4, 5];
+// let reverse = numbers.reverse();
+// console.log("Reverse: ", reverse)
+
+//Task-8
+//verilmis array-da object-lerin  key-lerini value-lerini consola-a cixardin.
+
+let students = [
+  {
+  name: "Sharifa",
+  surname: "Aliyeva",
+  studentNumber: "12345",
+  grades:[85, 75, 92]
+
+},
+{
+  name:"Nazrin",
+  surname:"Muxtarova",
+  studentNumber:"6789",
+  grades:[72, 87, 68]
+
+}
+]
