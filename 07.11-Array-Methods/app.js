@@ -101,6 +101,7 @@ const company = [
 ];
 
 const companyName = company.map((item) => {
-  return item.firstName + " "+ item.lastName + " "+ "illik" + " " + item.salary +"$" + " " + "maas alir ve" +  " " + item.yearsWorked  +"ildir calisir" ;
+  return item.firstName + " "+ item.lastName + " "+ "illik" + " " + item.salary +"$" + " " + "maas alir ve" +  " " + item.yearsWorked 
+   +"ildir calisir" ;
 });
 console.log(companyName);
