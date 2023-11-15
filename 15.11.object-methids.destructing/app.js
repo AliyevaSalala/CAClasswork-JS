@@ -45,7 +45,6 @@ var library = [
 //   }
 // });
 
-
 //------------------------------------------- TASK 3 ----------------------------------------------------------
 
 //---"employee" adlı object yaradın. Object-in name, jobTitle, salary və promote adında key-ləri var. promote bir anonim function-dır, 2 parametr qəbul edir. jobTitle-in value-ı ilk dəfə "Software Developer" salary isə 75000. Ən sonda employee.promote-a bir yeni vəzifə və yeni maaş göndərin.
@@ -53,25 +52,40 @@ var library = [
 
 //--Nəticə: Promotion: Alice is now Senior Software Engineer with a salary of $90000
 
+const employee = {
+  name: "Alice",
+  jobTitle: "Software Developer",
+  salary: 75000,
 
-
+  promote: function (newTitle, newSalary) {
+    this.jobTitle = newTitle;
+    this.salary = newSalary;
+    console.log(
+      `Promotion:` +
+        this.name +
+        ` is now ` +
+        this.jobTitle +
+        ` with a salary of $ ` +
+        this.salary
+    );
+  },
+};
+employee.promote("Senior Software Enginner ", 90000);
 
 //---------------------------- TASK 4 ----------------------------------------------------------
+//---Object methodu ilə character objecti təyin edib aşağıdakı kimi console-a çıxardın.
 
 const name = {
-    firstName: 'Philip',
-    lastName: 'Fry'
+  firstName: "Philip",
+  lastName: "Fry",
 };
 
 const details = {
-    job: 'Delivery Boy',
-    employer: 'Planet Express'
+  job: "Delivery Boy",
+  employer: "Planet Express",
 };
 
-//---Object methodu ilə character objecti təyin edib aşağıdakı kimi console-a çıxardın.
- 
-
-let character= Object.assign({}, name, details)
+let character = Object.assign({}, name, details);
 
 console.log(character);
 
@@ -79,3 +93,17 @@ console.log(character);
 
 //--ladder adlı object yaradın. step adında dəyəri 0-olan key yazın. Bundan əlava object-in 2 ayrı function-ı olsun. up və down.
 //--up function step-in dəyərin +1 artırsın. down isə -1 azaltsın.
+
+const ladder = {
+  step: 0,
+  up: function () {
+    return (this.step += 1);
+  },
+  down: function () {
+    return (this.step -= 1);
+  },
+};
+console.log(ladder.up());
+console.log(ladder.up());
+console.log(ladder.down());
+console.log(ladder.down());
