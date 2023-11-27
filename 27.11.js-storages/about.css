@@ -1,0 +1,29 @@
+.about-section {
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+    color: #333;
+}
+
+.about-section p {
+    color: #666;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, tr, table, td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: #0056b3;
+}
