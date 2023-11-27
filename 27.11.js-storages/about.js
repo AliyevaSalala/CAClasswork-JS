@@ -1,20 +1,15 @@
-let userData = JSON.parse(localStorage.getItem("personObj"));
-
-function renderTable(userData) {
-  let table = document.querySelector("table");
-  let tbody = document.querySelector("tbody");
-
-  userData.forEach((data) => {
-    let tr = document.createElement("tr");
-    tr.innerHTML = `
-        <td> ${data.id}</td>
-        <td> ${data.firstName}</td>
-        <td> ${data.lastName}</td>
-        <td> ${data.address}</td>`;
-
-    tbody.append("tr");
+let tBody = document.querySelector("tbody");
+let data = JSON.parse(localStorage.getItem("user"));
+function drawTable(data) {
+  data.forEach((element) => {
+    let trElem = document.createElement("tr");
+    trElem.innerHTML = `
+      <td>${element.id}</td>
+      <td>${element.firstName}</td>
+      <td>${element.lastName}</td>
+      <td>${element.address}</td>
+      `;
+    tBody.append(trElem);
   });
-  table.appendChild(tbody);
 }
-
-renderTable(userData);
+drawTable(data);
