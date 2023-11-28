@@ -7,7 +7,7 @@ const products = [
       "The iPhone X was Apple's flagship 10th anniversary iPhone featuring a 5.8-inch OLED display, facial recognition and 3D camera functionality, a glass body, and an A11 Bionic processor.",
     price: 960,
 
-    thumbnail: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-x.jpg&quot;",
+    thumbnail: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-x.jpg",
 
     stock: 55,
     tags: ["mobile phone", "smartphone", "ios"],
@@ -23,7 +23,7 @@ const products = [
       "The iPhone 11 is a smartphone designed, developed, and marketed by Apple Inc.",
     price: 999,
 
-    thumbnail: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-11.jpg&quot;",
+    thumbnail: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-11.jpg",
 
     stock: 42,
     tags: ["mobile phone", "smartphone", "ios"],
@@ -39,8 +39,7 @@ const products = [
       "The iPhone 14 Pro is a smartphone designed, developed, and marketed by Apple Inc.",
     price: 1499,
 
-    thumbnail:
-      "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-pro.jpg&quot;",
+    thumbnail: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-pro.jpg",
 
     stock: 50,
     tags: ["mobile phone", "smartphone", "ios"],
@@ -57,7 +56,7 @@ const products = [
     price: 1199,
 
     thumbnail:
-      "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s23-ultra-5g.jpg&quot;",
+      "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s23-ultra-5g.jpg",
 
     stock: 25,
     tags: ["mobile phone", "smartphone", "android"],
@@ -73,7 +72,7 @@ const products = [
     price: 1245,
 
     thumbnail:
-      "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-z-fold4-5g.jpg&quot;",
+      "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-z-fold4-5g.jpg",
 
     stock: 30,
     tags: ["mobile phone", "smartphone", "android"],
@@ -88,8 +87,7 @@ const products = [
       "This here are the lowest prices we could find for the Samsung Galaxy A73 5G at our partner stores.",
     price: 397,
 
-    thumbnail:
-      "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a73-5g.jpg&quot;",
+    thumbnail: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a73-5g.jpg",
 
     stock: 20,
     tags: ["mobile phone", "smartphone", "android"],
@@ -104,8 +102,7 @@ const products = [
       "This here are the lowest prices we could find for the Huawei nova 10 Youthat our partner stores.",
     price: 450,
 
-    thumbnail:
-      "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova10-yough.jpg&quot;",
+    thumbnail: "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova10-yough.jpg",
 
     stock: 40,
     tags: ["mobile phone", "smartphone", "android"],
@@ -121,7 +118,7 @@ const products = [
     price: 850,
 
     thumbnail:
-      "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-50-rs-porsche-design.jpg&quot;",
+      "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-50-rs-porsche-design.jpg",
 
     stock: 50,
     tags: ["mobile phone", "smartphone", "android", "huawei"],
@@ -136,8 +133,7 @@ const products = [
       "This here are the lowest prices we could find for the Asus ROG Phone 6D RS Porsche Design Youthat our partner stores.",
     price: 690,
 
-    thumbnail:
-      "https://fdn2.gsmarena.com/vv/bigpic/asus-rog-phone-6d.jpg&quot;",
+    thumbnail: "https://fdn2.gsmarena.com/vv/bigpic/asus-rog-phone-6d.jpg",
 
     stock: 45,
     tags: ["mobile phone", "smartphone", "android", "asus"],
@@ -153,7 +149,7 @@ const products = [
     price: 510,
 
     thumbnail:
-      "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone7-pro-zs670ks-zs671ks.jpg&quot;",
+      "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone7-pro-zs670ks-zs671ks.jpg",
 
     stock: 60,
     tags: ["mobile phone", "smartphone", "android", "asus"],
@@ -169,7 +165,7 @@ const products = [
     price: 1660,
 
     thumbnail:
-      "https://cdn1.smartprix.com/rx-i4TCnbvn5-w420-h420/asus-tuf-gaming-a17.webp&quot;",
+      "https://cdn1.smartprix.com/rx-i4TCnbvn5-w420-h420/asus-tuf-gaming-a17.webp",
 
     stock: 60,
     tags: ["gaming", "laptop", "windows", "asus"],
@@ -185,7 +181,7 @@ const products = [
     price: 1400,
 
     thumbnail:
-      "https://cdn1.smartprix.com/rx-ial6kx7ni-w420-h420/lenovo-ideapad-slim.webp&quot;",
+      "https://cdn1.smartprix.com/rx-ial6kx7ni-w420-h420/lenovo-ideapad-slim.webp",
 
     stock: 20,
     tags: ["office", "laptop", "windows", "lenovo"],
@@ -201,7 +197,7 @@ const products = [
     price: 1500,
 
     thumbnail:
-      "https://cdn1.smartprix.com/rx-ixw8plkUF-w420-h420/hp-pavilion-15-ec200.webp&quot;",
+      "https://cdn1.smartprix.com/rx-ixw8plkUF-w420-h420/hp-pavilion-15-ec200.webp",
 
     stock: 14,
     tags: ["gaming", "laptop", "windows", "hp"],
@@ -217,7 +213,7 @@ const products = [
     price: 1710,
 
     thumbnail:
-      "https://cdn1.smartprix.com/rx-ie0dZGrf5-w420-h420/acer-aspire-7-a715-5.webp&quot;",
+      "https://cdn1.smartprix.com/rx-ie0dZGrf5-w420-h420/acer-aspire-7-a715-5.webp",
 
     stock: 22,
     tags: ["gaming", "laptop", "windows", "acer"],
@@ -233,7 +229,7 @@ const products = [
     price: 1620,
 
     thumbnail:
-      "https://cdn1.smartprix.com/rx-iIL0bISnc-w420-h420/msi-gaming-katana-gf.webp&quot;",
+      "https://cdn1.smartprix.com/rx-iIL0bISnc-w420-h420/msi-gaming-katana-gf.webp",
 
     stock: 22,
     tags: ["gaming", "laptop", "windows", "msi"],
@@ -250,7 +246,7 @@ const products = [
     price: 799,
 
     thumbnail:
-      "https://fdn2.gsmarena.com/vv/bigpic/apple-watch-series-7-aluminum.jpg&quot;",
+      "https://fdn2.gsmarena.com/vv/bigpic/apple-watch-series-7-aluminum.jpg",
 
     stock: 16,
     tags: ["digital", "watch", "apple"],
@@ -265,7 +261,7 @@ const products = [
     price: 800,
 
     thumbnail:
-      "https://360view.hum3d.com/zoom/Apple/Apple_Watch_38mm_Rose_Gold_Case_with_Gray_Modern_Buckle_1000_0001.jpg&quot;",
+      "https://360view.hum3d.com/zoom/Apple/Apple_Watch_38mm_Rose_Gold_Case_with_Gray_Modern_Buckle_1000_0001.jpg",
 
     stock: 16,
     tags: ["digital", "watch", "apple"],
@@ -280,8 +276,7 @@ const products = [
       "Noise Cancelling Over-Ear Headphones - Apple W1 Headphone Chip, Class 1 Bluetooth, 22 Hours of Listening Time",
     price: 232,
 
-    thumbnail:
-      "https://m.media-amazon.com/images/I/51-+O3-wFxL._AC_SX522_.jpg&quot;",
+    thumbnail: "https://m.media-amazon.com/images/I/51-+O3-wFxL.AC_SX522.jpg",
 
     stock: 18,
     tags: ["earphone", "headphone", "beats"],
@@ -296,8 +291,7 @@ const products = [
       "rue Wireless Noise Cancelling Earbuds - Compatible with Apple & Android, Built-in Microphone, IPX4 Rating, Sweat Resistant Earphones, Class 1 Bluetooth Headphones - Black",
     price: 119,
 
-    thumbnail:
-      "https://m.media-amazon.com/images/I/51bRSWrEc7S._AC_SX522_.jpg&quot;",
+    thumbnail: "https://m.media-amazon.com/images/I/51bRSWrEc7S.AC_SX522.jpg",
 
     stock: 26,
     tags: ["earphone", "headphone", "beats"],
@@ -312,8 +306,7 @@ const products = [
       "Earbuds with Lightning Charging Case Included. Over 24 Hours of Battery Life, Effortless Setup. Bluetooth Headphones for iPhone",
     price: 119,
 
-    thumbnail:
-      "https://m.media-amazon.com/images/I/61ziCBwTtEL._AC_SX522_.jpg&quot;",
+    thumbnail: "https://m.media-amazon.com/images/I/61ziCBwTtEL.AC_SX522.jpg",
 
     stock: 30,
     tags: ["earphone", "headphone", "apple", "earbuds"],
@@ -322,8 +315,33 @@ const products = [
   },
 ];
 
-let allProducts = document.querySelector(".products");
+const productsDiv = document.querySelector(".products");
+let basket = JSON.parse(localStorage.getItem("basket")) ?? [];
+
+drawCard(products);
 
 function drawCard(data) {
-  allProducts.innerHTML = ``;
+  (productsDiv.innerHTML = ""),
+    data.forEach((product) => {
+      productsDiv.innerHTML += `
+    <div class="product">
+    <img src="${product.thumbnail}" alt="" />
+    
+    <h4>${product.title}</h4>
+    <h4>${product.price}$</h4>
+    <p>
+    ${product.description}
+    </p>
+    <div class="btn-icon">
+    <button class="btn-add" onclick=addToBasket("${product.title}")>Add to Basket</button>
+    <i class="fa-regular fa-heart"></i>
+    </div>
+    </div>
+    `;
+    });
 }
+
+// function addToBasket(item) {
+//   console.log(item);
+//   // localStorage.setItem("", JSON.stringify())
+// }

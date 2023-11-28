@@ -8,13 +8,14 @@
   margin: 0 auto;
 }
 
-.basket {
+.products {
   margin-top: 40px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 50px;
 }
-.basket-box {
+.product {
   width: 25%;
   border: 1px solid gray;
   border-radius: 5px;
@@ -23,11 +24,11 @@
   gap: 10px;
 }
 
-.basket-box img {
+.product img {
   width: 100%;
 }
 
-.basket-box .btn-add {
+.product .btn-add {
   padding: 10px 20px;
   background-color: blue;
   border-radius: 5px;
