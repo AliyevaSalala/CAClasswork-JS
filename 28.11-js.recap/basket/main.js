@@ -333,7 +333,7 @@ function drawCard(data) {
     ${product.description}
     </p>
     <div class="btn-icon">
-    <button class="btn-add" onclick=addToBasket("${product.title}")>Add to Basket</button>
+    <button class="btn-add" onclick=addToBasket("${product._id}")>Add to Basket</button>
     <i class="fa-regular fa-heart"></i>
     </div>
     </div>
@@ -341,7 +341,19 @@ function drawCard(data) {
     });
 }
 
-// function addToBasket(item) {
-//   console.log(item);
-//   // localStorage.setItem("", JSON.stringify())
-// }
+function addToBasket(id) {
+  // console.log(item);
+  // localStorage.setItem("", JSON.stringify())
+  let product = products.find((elem) => elem._id === id);
+  let index = basket.findIndex((elem) => elem._id === id);
+
+  if (index > -1) {
+    basket[index] = {
+      ...basket[index],
+      amount: basket[index].amount + 1,
+      product,
+    };
+  } else {
+    basket.push({ ...product, amount: 1 });
+  }
+}
