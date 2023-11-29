@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+    <style>
+      .dark-mode {
+        background-color: #000;
+      }
+      .dark-mode .text {
+        color: #fff;
+      }
+      .dark-mode .lorem {
+        color: #fff;
+      }
+      .dark-mode .card {
+        background-color: gray;
+      }
+      .dark-mode .card-text {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-primary my-3 toggle-btn">
+            Toggle Dark Mode
+          </button>
+          <h1 class="text">Sample Content</h1>
+          <p class="lorem">Lorem ipsum dolor sit.</p>
+          <div class="card col-4 my-3">
+            <div class="card-body">
+              <h5 class="card-title card-text">Special title treatment</h5>
+              <p class="card-lorem
+              ">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+            </div>
+          </div>
+          <div class="card col-4">
+            <div class="card-body">
+              <h5 class="card-title card-text">Special title treatment</h5>
+              <p class="card-lorem
+              ">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

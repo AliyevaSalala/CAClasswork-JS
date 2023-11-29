@@ -342,8 +342,8 @@ function drawCard(data) {
 }
 
 function addToBasket(id) {
-  // console.log(item);
-  // localStorage.setItem("", JSON.stringify())
+  console.log(id);
+  localStorage.setItem("", JSON.stringify())
   let product = products.find((elem) => elem._id === id);
   let index = basket.findIndex((elem) => elem._id === id);
 
@@ -357,3 +357,6 @@ function addToBasket(id) {
     basket.push({ ...product, amount: 1 });
   }
 }
+
+
+let toogleBtn= document.querySelector(".toggle-btn")
