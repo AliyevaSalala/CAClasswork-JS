@@ -120,13 +120,24 @@ body {
   background-color: #000;
 }
 
-.dark-mode .page-header{
-    color: red;
+.dark-mode .page-header {
+  color: red;
 }
-.dark-mode .switch-btn{
-    color: #000;
-    background-color: orange;
+.dark-mode .switch-btn {
+  color: #000;
+  background-color: orange;
 }
-.dark-mode .clock{
-    background-color:orange;
+.dark-mode .clock {
+  background-color: orange;
+}
+
+body .switch-btn :last-child {
+  display: none;
+}
+
+.dark-mode .switch-btn :last-child {
+  display: block;
+}
+.dark-mode .switch-btn :first-child {
+  display: none;
 }

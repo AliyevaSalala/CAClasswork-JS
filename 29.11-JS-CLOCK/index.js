@@ -25,7 +25,7 @@ localStorage.getItem("dark-mode") === "true" &&
 
 switchBtn.addEventListener("click", function () {
   document.body.classList.toggle("dark-mode");
-  switchBtn.innerText = "BLACK";
+  // switchBtn.innerText = "BLACK";
   localStorage.getItem("dark-mode") === "true"
     ? localStorage.setItem("dark-mode", false)
     : localStorage.setItem("dark-mode", true);
