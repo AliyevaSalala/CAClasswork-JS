@@ -13,6 +13,7 @@ inputElem.style.margin = "10px 0";
 inputElem.style.padding = "8px 20px";
 inputElem.style.width = "100%";
 inputElem.style.borderRadius = "5px";
+// inputElem.required = true;
 
 let inputPassword = document.createElement("input");
 inputPassword.type = "password";
@@ -20,6 +21,7 @@ inputPassword.placeholder = "password";
 inputPassword.style.width = "100%";
 inputPassword.style.padding = "8px 20px";
 inputPassword.style.borderRadius = "5px";
+// inputPassword.required = true;
 
 let inputSubmit = document.createElement("input");
 inputSubmit.type = "submit";
@@ -40,6 +42,7 @@ inputPasswordTwo.style.width = "100%";
 inputPasswordTwo.style.padding = "8px 20px";
 inputPasswordTwo.style.borderRadius = "5px";
 inputPasswordTwo.style.margin = "10px 0";
+// inputPasswordTwo.required = true;
 
 let divElemEmail = document.createElement("div");
 divElemEmail.classList = "box emailDiv";
@@ -62,26 +65,22 @@ divElemPasswordTwo.append(inputPasswordTwo);
 form.append(divElemEmail, divElemPassword, divElemPasswordTwo, divElemSubmit);
 formDiv.append(form);
 
-let arr = [];
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-  if (inputElem.value !== "" && inputPassword.value !== "") {
-    let user = {
-      email: inputElem.value,
-      password: inputPassword.value,
-    };
-    console.log(user);
-    arr.push(user);
+  let user = {
+    email: inputElem.value,
+    password: inputPassword.value,
+    confirim: inputPasswordTwo.value,
+  };
+  // console.log(window.location.href);
+  if (inputElem.value.length > 1 && inputPassword.value.length >= 4) {
+    localStorage.setItem("user", JSON.stringify(user));
+    window.location.href =
+      "http://127.0.0.1:5500/30.11.JS-PRACTIES/form.html?username=naterek";
   } else {
     window.alert("AY USAQ FORMU DOLDUR !!!");
   }
-  window.location.href =
-    "http://127.0.0.1:5500/30.11.JS-PRACTIES/form.html?username=";
-
-  localStorage.setItem("user", JSON.stringify(arr));
-  JSON.parse(localStorage.getItem("user"));
   inputElem.value = "";
   inputPassword.value = "";
   inputPasswordTwo.value = "";
 });
-

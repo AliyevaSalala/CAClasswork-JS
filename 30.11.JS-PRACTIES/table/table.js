@@ -598,6 +598,8 @@ const data = [
 
 let tBody = document.querySelector("tbody");
 let thElem = document.querySelector("#th");
+let thElemName = document.querySelector("#name");
+let icon = document.querySelector(".icon");
 
 function drawTable(data) {
   tBody.innerHTML = "";
@@ -613,18 +615,57 @@ function drawTable(data) {
 }
 drawTable(data);
 
+let sortedToggle = true;
 thElem.addEventListener("click", function () {
-  let sorted = data.sort((a, b) => {
-    return a.id - b.id;
-  });
-  thElem.style.color="red"
-  drawTable(sorted)
+  if (sortedToggle) {
+    let sorted = data.sort((a, b) => {
+      return b.id - a.id;
+    });
+    drawTable(sorted);
+    icon.classList.remove("fa-arrow-down");
+    icon.classList.add("fa-arrow-up");
+    thElem.style.color = "green";
+    sortedToggle = false;
+  } else {
+    let sorted = data.sort((a, b) => {
+      return a.id - b.id;
+    });
+    drawTable(sorted);
+    thElem.style.color = "red";
+    icon.classList.remove("fa-arrow-up");
+    icon.classList.add("fa-arrow-down");
+    sortedToggle = true;
+  }
 });
-thElem.addEventListener("click", function () {
-  let sorted = data.sort((a, b) => {
-    return b.id - a.id;
+let sortedToggleTwo = true;
+thElemName.addEventListener("click", function () {
+  if (sortedToggleTwo) {
+    let sorted = data.sort((a, b) => {
+      return a.first_name.localeCompare(b.first_name);
+    });
+    drawTable(sorted);
+    thElemName.style.color="green"
+    icon.classList.add("fa-arrow-down");
+    sortedToggleTwo = false;
+  } else {
+    let sorted = data.sort((a, b) => {
+      return b.first_name.localeCompare(a.first_name);
+    });
+    drawTable(sorted);
+    thElemName.style.color="red"
+    icon.classList.add("fa-arrow-up");
+    sortedToggleTwo = true;
+  }
+});
+
+
+let search = document.querySelector("#search");
+
+search.addEventListener("keyup", function (event) {
+  let filterElem = data.filter((element) => {
+    return element.first_name
+      .toLocaleLowerCase()
+      .includes(event.target.value.toLocaleLowerCase());
   });
-  thElem.classList="fa-solid fa-arrow-up"
-  thElem.style.color="green"
-  drawTable(sorted)
+  drawTable(filterElem)
 });

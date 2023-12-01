@@ -13,6 +13,7 @@ inputElem.style.margin = "10px 0";
 inputElem.style.padding = "8px 20px";
 inputElem.style.width = "100%";
 inputElem.style.borderRadius = "5px";
+inputElem.required = true;
 
 let inputPassword = document.createElement("input");
 inputPassword.type = "password";
@@ -20,6 +21,7 @@ inputPassword.placeholder = "password";
 inputPassword.style.width = "100%";
 inputPassword.style.padding = "8px 20px";
 inputPassword.style.borderRadius = "5px";
+inputPassword.required=true
 
 let inputSubmit = document.createElement("input");
 inputSubmit.type = "submit";
@@ -51,6 +53,7 @@ divElemSubmit.append(inputSubmit);
 form.append(divElemEmail, divElemPassword, aElem, divElemSubmit);
 formDiv.append(form);
 
+let userData = JSON.parse(localStorage.getItem("user")) ?? [];
 let arr = [];
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -61,20 +64,11 @@ form.addEventListener("submit", function (e) {
   console.log(user);
   arr.push(user);
   arr.forEach((item) => {
-    if (
-      item.email == inputElem.value &&
-      item.password == inputPassword.value
-    ) {
+    if (item.email == inputElem.value && item.password == inputPassword.value) {
       window.location.href =
         "http://127.0.0.1:5500/30.11.JS-PRACTIES/home.html?username=";
     } else {
-      window.location.href =
-        "http://127.0.0.1:5500/30.11.JS-PRACTIES/signUp.html?username=";
+      alert("user not found");
     }
   });
-
-  localStorage.setItem("user", JSON.stringify(arr));
-  JSON.parse(localStorage.getItem("user"));
-  inputElem.value = "";
-  inputPassword.value = "";
 });

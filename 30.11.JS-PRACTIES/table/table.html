@@ -13,31 +13,39 @@
     />
     <title>Document</title>
     <style>
-       table,
-    th,
-    td {
-      border: 1px solid gray;
-      border-collapse: collapse;
-      text-align: center;
-    }
-    th,
-    td {
-      padding: 10px 30px;
-    }
-    .container {
-      display: flex;
-
-      justify-content: center;
-    }
+      table,
+      th,
+      td {
+        border: 1px solid gray;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      th,
+      td {
+        padding: 10px 30px;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+      input{
+        width: 400px;
+        margin: 20px;
+        padding: 8px 15px;
+        border: 2px solid red;
+        border-radius: 5px;
+        outline: none;
+      }
     </style>
   </head>
   <body>
+    <input type="search" id="search" placeholder="Search..."/>
     <div class="container">
       <table>
         <thead>
           <tr>
-            <th id="th">ID<i class="fa-solid fa-arrow-down"></i></th>
-            <th>NAME</th>
+            <th id="th">ID<i class="fa-solid fa-arrow-down icon"></i></th>
+            <th id="name">NAME</th>
             <th>EMAIL</th>
             <th>GENDER</th>
           </tr>
