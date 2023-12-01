@@ -65,6 +65,7 @@ divElemPasswordTwo.append(inputPasswordTwo);
 form.append(divElemEmail, divElemPassword, divElemPasswordTwo, divElemSubmit);
 formDiv.append(form);
 
+let userData = JSON.parse(localStorage.getItem("user")) ?? [];
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   let user = {
@@ -83,4 +84,5 @@ form.addEventListener("submit", function (e) {
   inputElem.value = "";
   inputPassword.value = "";
   inputPasswordTwo.value = "";
+  localStorage.setItem("user", JSON.stringify(userData))
 });

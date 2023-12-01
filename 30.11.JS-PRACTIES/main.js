@@ -54,7 +54,7 @@ form.append(divElemEmail, divElemPassword, aElem, divElemSubmit);
 formDiv.append(form);
 
 let userData = JSON.parse(localStorage.getItem("user")) ?? [];
-let arr = [];
+// let arr = [];
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   let user = {
@@ -62,13 +62,17 @@ form.addEventListener("submit", function (e) {
     password: inputPassword.value,
   };
   console.log(user);
-  arr.push(user);
-  arr.forEach((item) => {
+  userData.push(user);
+  userData.forEach((item) => {
     if (item.email == inputElem.value && item.password == inputPassword.value) {
       window.location.href =
         "http://127.0.0.1:5500/30.11.JS-PRACTIES/home.html?username=";
     } else {
-      alert("user not found");
+      // alert("user not found");
+      window.location.href =
+      "http://127.0.0.1:5500/30.11.JS-PRACTIES/signUp.html?username=";
     }
   });
+  localStorage.setItem("user", JSON.stringify(userData))
 });
+

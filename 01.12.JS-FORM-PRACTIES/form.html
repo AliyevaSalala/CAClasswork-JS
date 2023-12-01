@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        body{ 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container{
+            width: 450px;
+            height: auto;
+            border-radius: 5px;
+            border: 1px solid red;
+        }
+        .label{
+            padding: 20px 30px;
+            color: #000;
+            text-align: center;
+
+        }
+      .login-form {
+        padding: 20px 40px;
+      }
+      .login-form .font {
+        color: #130f40;
+        margin: 5px 0;
+      }
+      .login-form input {
+        /* width: 350px; */
+        width: 100%;
+        padding: 8px 5px;
+        outline: none;
+        border: 1px solid blue;
+      }
+      .login-form button{
+        margin: 45px 0 30px 0;
+        width: 100%;
+        padding: 8px 0;
+        background-color: #130f40;
+        color: #fff;
+      }
+    </style>
+    <title>FORM PAGE</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="label">USER LOGIN</h1>
+      <form action="" class="login-form">
+        <div class="font">Email or Phone</div>
+        <input type="text" />
+        <div class="font font2">Password</div>
+        <input type="password" />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+    <script src="./form.js"></script>
+  </body>
+</html>
