@@ -1,5 +1,273 @@
 {
-  "posts": [{ "id": 1, "title": "json-server", "author": "typicode" }],
-  "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
-  "profile": { "name": "typicode" }
+  "posts": [
+    {
+      "id": 1,
+      "firstName": "Sharifa",
+      "lastName": "Aliyeva",
+      "age": "22",
+      "city": "Ganja"
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 42
+    },
+    {
+      "id": 43
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 44
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 46
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 47
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 48
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 49
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 50
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 51
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 52
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 53
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 54
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 55
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 56
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 57
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 58
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 59
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 60
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 61
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 62
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 63
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 64
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 65
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 66
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 67
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 68
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 69
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 70
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 71
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 72
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 73
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 74
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 75
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 76
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 77
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 78
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 79
+    },
+    {
+      "firstName": "Shabnam",
+      "lastName": "Ibrahimova",
+      "age": "22",
+      "city": "Ganja",
+      "id": 80
+    }
+  ]
 }

@@ -1,11 +1,12 @@
 let form = document.querySelector("form");
 let cont = document.querySelector(".container");
 let inputs = document.querySelectorAll("input");
-
 let dataWather = document.querySelector(".data");
+let search = document.querySelector("#search");
+let searchBtn = document.querySelector(".search-btn");
 let curCity = "baku";
 
-function getWeather(params) {
+function getWeather() {
   fetch(
     `https://api.weatherapi.com/v1/current.json?key=de4fcc1d06a64857be7101727222212&q=${curCity}&aqi=no`
   )
@@ -24,3 +25,8 @@ function getWeather(params) {
 }
 getWeather();
 
+searchBtn.addEventListener("click", () => {
+  
+  // getWeather(search.value);
+  console.log(search.value);
+});
