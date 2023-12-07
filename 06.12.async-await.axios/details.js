@@ -6,6 +6,7 @@ const BASE_URL = "https://fakestoreapi.com/products";
 
 async function getData(endpoint) {
   try {
+    
     const res = await axios(`${BASE_URL}/${endpoint}/${id}`);
     // console.log(res.data);
     details.innerHTML = `

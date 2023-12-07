@@ -1,0 +1,52 @@
+{
+  "blogs": [
+    {
+      "title": "Magni id ratione off",
+      "body": "Velit delentid quie e",
+      "author": "Lorem",
+      "id": 1
+    },
+    {
+      "title": "SHARIFA",
+      "body": "Aliyeva",
+      "author": " lorem Ipsum",
+      "id": 3
+    },
+    {
+      "title": "Gulnar",
+      "body": "Babakisyeva",
+      "author": " lorem",
+      "id": 4
+    },
+    {
+      "title": "Sebnem",
+      "body": "Ibrahimova",
+      "author": " lorem",
+      "id": 5
+    },
+    {
+      "title": "sebnem ibrahimova",
+      "body": "Sebenem Ibrahimova",
+      "author": " lorem",
+      "id": 6
+    },
+    {
+      "title": "seboo",
+      "body": "Sebenem seboo  Ibrahimova",
+      "author": " lorem",
+      "id": 7
+    },
+    {
+      "title": "seboo",
+      "body": "Sseboo  Ibrahimova",
+      "author": " lorem",
+      "id": 8
+    },
+    {
+      "title": "serife sebo sero",
+      "body": "Sseboo  Ibrahimova",
+      "author": " lorem",
+      "id": 9
+    }
+  ]
+}

@@ -21,7 +21,7 @@ function drawCards(arr) {
     <div class="col-12 col-md-6 col-lg-4 product mb-3">
      <a href="details.html?id=${element.id}">
      <div class="card" style="width: 15rem">
-     <img src="${element.image}" class="card-img-top"/>
+     <img src="${element.image}" class="card-img-top "/>
      <div class="card-body">
        <p class="card-title">${element.title}</p>
        <p class="card-text">
