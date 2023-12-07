@@ -20,7 +20,7 @@ function drawCards(arr) {
           <button class="btn delete-btn"  onclick=deleteData(${
             element.id
           },this)>Delete</button>
-          <button class="edit-btn"><a href="">Edit</a></button>
+          <button class="edit-btn"><a href="newBlog.html?id=${element.id}">Edit</a></button>
         </div>
       </div>
         `;

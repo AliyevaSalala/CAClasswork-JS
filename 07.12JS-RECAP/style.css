@@ -86,13 +86,46 @@ section {
 
 /*------------------- NEW BLOG SECTION---------- */
 
+.section{
+padding: 1.5rem 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
 .section-form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  gap: 20px;
   align-items: center;
-  text-align: center;
+  width: 500px;
 }
 
 .section-form h1 {
   color: red;
+}
+.form-input input{
+  width: 100%;
+  padding: 3px;
+}
+.form-input{
+  margin-bottom: 15px;
+}
+.form-input-2{
+  margin-bottom: 15px;
+}
+select{
+  width: 100%;
+  padding: 3px;
+}
+
+.add-btn{
+  margin-top: 15px;
+}
+.add-btn button{
+  padding: 5px;
+  border-radius: 8px;
+  background-color: red;
+  color: #fff;
+  border: 1px solid transparent;
 }

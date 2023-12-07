@@ -1,12 +1,6 @@
 {
   "blogs": [
     {
-      "title": "Magni id ratione off",
-      "body": "Velit delentid quie e",
-      "author": "Lorem",
-      "id": 1
-    },
-    {
       "title": "SHARIFA",
       "body": "Aliyeva",
       "author": " lorem Ipsum",
@@ -47,6 +41,11 @@
       "body": "Sseboo  Ibrahimova",
       "author": " lorem",
       "id": 9
+    },
+    {
+      "title": "yemek",
+      "body": "ders oxu sharifa",
+      "id": 10
     }
   ]
 }

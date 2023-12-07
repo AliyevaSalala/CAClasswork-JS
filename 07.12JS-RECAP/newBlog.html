@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="./style.css" />
     <title>New Blog Page</title>
   </head>
@@ -23,22 +24,36 @@
       </div>
     </header>
 
-    <section>
+    <section class="section">
       <div class="container">
-        <div class="form-section">
+        <div class="section-form">
           <h1>Add a New Blog</h1>
-          <div>
+          <div class="form">
             <form action="">
-              <label for="">Blog Title:</label>
-              <input type="text" />
-              <label for="">Blog body:</label>
-              <textarea name="" id="" cols="30" rows="3"></textarea>
-              <label for="">Blog author:</label>
-              <select name="" id="">
-                <option value="select author">select author</option>
-                <option value="lorem">Lorem</option>
-                <option value="ipsum">Ipsum</option>
-              </select>
+              <div class="form-input">
+                <div><label for="">Blog Title:</label></div>
+                <div><input type="text" class="input" /></div>
+              </div>
+              <div class="form-input-2">
+                <div><label for="">Blog body:</label></div>
+                <div>
+                  <textarea name="" id="" cols="30" rows="3"></textarea>
+                </div>
+              </div>
+              <div><label for="">Blog author:</label></div>
+              <div>
+                <select name="" id="mySelect">
+                  <option value="select author" selected disabled>
+                    select author
+                  </option>
+                  <option value="lorem">Lorem</option>
+                  <option value="ipsum">Ipsum</option>
+                  <option value="dolor">Dolor</option>
+                </select>
+              </div>
+              <div class="add-btn">
+                <button>Add Blog</button>
+              </div>
             </form>
           </div>
         </div>
