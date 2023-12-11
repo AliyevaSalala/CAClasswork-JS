@@ -55,3 +55,16 @@ let like ="true"; //boolean
  let average =( nigar + selale + selime + nazrin + briliant + gulnar + shebnem + guller)/8;
  console.log("telebelerin ortalamasi:", average)
 
+
+
+ let firstValue="add"
+ let secondValue="success"
+
+ 
+ function test(str){
+    
+
+ }
+
+ test(firstValue)
+ test(secondValue)
