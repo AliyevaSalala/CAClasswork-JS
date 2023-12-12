@@ -1,6 +1,9 @@
 let form = document.querySelector("form");
 let inputsALL = document.querySelectorAll(".form-control");
-let icon = document.querySelector(".fa-eye");
+// let icon = document.querySelector(".fa-eye");
+// let noIcon = document.querySelector(".fa-eye-slash");
+let hide1 = document.querySelector("#hide1");
+let hide2 = document.querySelector("#hide2");
 
 let arr = JSON.parse(localStorage.getItem("arr")) || [];
 form.addEventListener("submit", function (e) {
@@ -30,13 +33,21 @@ form.addEventListener("submit", function (e) {
   //   console.log(bool);
 });
 
-icon.addEventListener("click", function () {
-  if (this.className === "fa-eye") {
+// icon.addEventListener("click", function () {
+//   noIcon.classList.toggle("show");
+//   icon.classList.contains("fa-eye")
+//     ? (icon.classList = "fa-solid fa-eye-slash")
+//     : (icon.classList = "fa-solid fa-eye");
+// });
+
+hide1.addEventListener("click", function () {
+  if (inputsALL[2].type === "password") {
     inputsALL[2].type = "text";
-    this.className = "fa-eye-slash";
+    hide1.style.display = "block";
+    hide2.style.display = "none";
   } else {
     inputsALL[2].type = "password";
-    this.className = "fa-eye";
+    hide1.style.display = "none";
+    hide2.style.display = "block";
   }
 });
-

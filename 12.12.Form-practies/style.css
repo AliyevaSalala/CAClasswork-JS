@@ -84,16 +84,15 @@
   margin-right: 15px;
 }
 
-
-.icon{
-    position: relative;
+.icon {
+  position: relative;
 }
-.icon i{
-    position: absolute;
-    right: 5px;
-    top: 7px;
+.icon i {
+  position: absolute;
+  right: 5px;
+  top: 7px;
 }
 
-.fa-eye-slash{
-display: none;
+.fa-eye-slash {
+  display: none;
 }
