@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  background-color: #000;
+}
+header nav ul {
+  display: flex;
+  gap: 50px;
+}
+header nav ul li a {
+  color: #fff;
+}
+header nav ul button {
+  padding: 5px 10px;
+  background-color: skyblue;
+  color: #000;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+section {
+  height: 88.5vh;
+  background-image: url("./images.jfif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: black;
+}

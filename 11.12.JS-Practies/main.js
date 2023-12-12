@@ -91,11 +91,6 @@ console.log(person);
 
 // -5. Ən uzun string value-nu console-a çıxardın.
 
-
-
-
-
-
 //------------------------------
 
 //TASK 4
@@ -108,19 +103,18 @@ const text = "Java is awesome. Java is fun.";
 // let str = text.replaceAll("Java", "Javascript");
 // console.log(str);
 
-
-
 //---------------------
 
 //TASK 5
 
 //Sözün palindrom olub olmadığını yoxlayın.
 
-function isPalindrome(string) {
-
+function isPalindrome(str) {
+  let reversStr = str.split("").reverse().join("");
+  return str == reversStr ? `${str} is polindrom` : `${str} is not polindrom`;
 }
 
-isPalindrome("hello");
+// console.log(isPalindrome("hello"));
 
 //-----------------
 
@@ -129,6 +123,14 @@ isPalindrome("hello");
 // console.log(longestWord("Hello word hi programmers"));
 
 //Ən uzun sözü tapın.  ======>> programmers
+
+function longestWord(element) {
+  let array = element.split(" ").sort((a, b) => {
+    return b.length - a.length;
+  });
+  return array[0];
+}
+console.log(longestWord("Hello word hi programmers"));
 
 //-----------------
 
@@ -148,3 +150,6 @@ console.log(newPersons);
 //------------------------------ part II
 
 //---tapdığınız objectin index-ni də ikinci bir console-da çıxardın.(metod ilə)
+
+let newsPersonsIndex=persons.findIndex((elem) => elem.age>30)
+console.log(newsPersonsIndex);
