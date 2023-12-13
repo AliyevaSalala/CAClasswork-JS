@@ -28,11 +28,13 @@ if (id) {
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-
+  let date = new Date();
   let newForm = {
     name: inputsAll[0].value,
     surname: inputsAll[1].value,
     email: inputsAll[2].value,
+    userphoto: `./assets/img/${inputsAll[3].value.split("\\")[2]}`,
+    date: date.toLocaleString(),
   };
 
   console.log(newForm);

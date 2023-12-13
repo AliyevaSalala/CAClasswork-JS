@@ -1,12 +1,9 @@
-let id = new URLSearchParams(window.location.search).get("id");
-console.log(id);
-const details = document.querySelector(".details");
+const cards = document.querySelector(".cards");
 let section = document.querySelector(".section");
 
 let button = document.createElement("button");
 
-const BASE_URL = "http://localhost:8080";
-// let favorite = JSON.parse(localStorage.getItem("favorite")) ?? [];
+let fav = JSON.parse(localStorage.getItem("fav"));
 
 button.innerText = "Go Back";
 section.append(button);
@@ -14,38 +11,31 @@ button.addEventListener("click", function () {
   window.history.back();
 });
 
-// async function dataCard() {
-//   try {
-//     const res = await axios(`${BASE_URL}/users/${id}`);
-//     // console.log(res.data.userphoto);
-//     let date = new Date();
-//     details.innerHTML += `
-//         <div class="card">
-//                 <img src="${res.data.userphoto}" alt="" />
-//                 <h3>${res.data.name} ${res.data.surname}</h3>
-//                 <hr />
-//                 <p>${res.data.email}</p>
-//                 <p>${date.getDay()}/${date.getMonth()}/${date.getFullYear()}
-//                 ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}</p>
+async function dataCard() {
+  fav.forEach((element) => {
+    cards.innerHTML += `
+    <div class="card">
+    <img src="${element.userphoto}" />
+    <h3>${element.name} ${element.surname}</h3>
+    <hr />
+    <p>${element.email}</p>
+    <p>${element.date}</p>
 
-//                 <button><a href="" onclick=removeBtn(${
-//                   res.data.id
-//                 },this)>Remove Fav</a></button>
-//               </div>`;
+    <button onclick="removeBtn(${element.id},this)">Remove Fav</button>
+  </div>
+    `;
+  });
+}
 
-//     // localStorage.setItem("favorite", JSON.stringify(favorite));
-//   } catch (error) {
-//     console.log(error);
-//   }
-// }
+dataCard();
 
-// dataCard();
+function removeBtn(id, btn) {
+  // console.log(id);
 
-
-
-async function removeBtn(id, btn) {
-    if (confirm("are you sure to delete?")) {
-      btn.closest("card").remove();
-      await axios.delete(`${BASE_URL}/users/${id}`);
-    }
+  if (confirm("are you sure to delete?")) {
+    let favorite = fav.filter((item) => item.id != id);
+    btn.closest(".card").remove();
+    // console.log(favorite);
+    localStorage.setItem("fav", JSON.stringify(favorite));
   }
+}

@@ -2,6 +2,8 @@ const BASE_URL = "http://localhost:8080";
 
 const tBody = document.querySelector("tbody");
 
+let fav = JSON.parse(localStorage.getItem("fav")) ?? [];
+
 async function getAllData() {
   const res = await axios(`${BASE_URL}/users`);
   drawTable(res.data);
@@ -23,7 +25,7 @@ function drawTable(data) {
         <td>
       <a href="form.html?id=${element.id}" class="edit-btn">Edit</a>
         <a href=""  class="delete-btn" onclick=deleteBtn(${element.id},this)> Delete</a>
-         <button class="add-btn" onclick=addBtn(${element.id})>Add Fav</button>
+         <button class="add-btn" onclick=addBtn("${element.id}")>Add Fav</button>
         </td>
         `;
     tBody.append(trElem);
@@ -37,6 +39,15 @@ async function deleteBtn(id, btn) {
   }
 }
 
-function addBtn(){
-
+async function addBtn(id) {
+  console.log(id);
+  const res = await axios(`${BASE_URL}/users/${id}`);
+  console.log(res.data);
+  let obj = fav.find((item) => item.id === id);
+  if (!obj) {
+    fav.push(res.data);
+    localStorage.setItem("fav", JSON.stringify(fav));
+  } else {
+    alert("birden artik elave ede bilmersen!!!!");
+  }
 }
