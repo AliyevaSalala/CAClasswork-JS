@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+@media screen and (max-width:1200px){
+    .container{
+        padding: 0 5%;
+    }
+}
+
+header {
+    padding: 2rem 0;
+    background-color: rgb(236, 197, 123);
+    /* position: relative;
+    position: fixed;
+    width: 100%; */
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header nav ul {
+    display: flex;
+    gap: 20px;
+  }
+  .header nav ul li a {
+    color: #000;
+  }
+  
