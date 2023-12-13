@@ -1,6 +1,8 @@
 const BASE_URL = "http://localhost:8080";
 
 const tBody = document.querySelector("tbody");
+const nav = document.querySelector(".nav");
+const menuIcon = document.querySelector("#menu");
 
 let fav = JSON.parse(localStorage.getItem("fav")) ?? [];
 
@@ -51,3 +53,11 @@ async function addBtn(id) {
     alert("birden artik elave ede bilmersen!!!!");
   }
 }
+
+menuIcon.addEventListener("click", function () {
+  nav.classList.toggle("show");
+
+  this.classList.contains("fa-bars")
+    ? (this.classList = "fa-solid fa-xmark")
+    : (this.classList = "fa-solid fa-bars");
+});
