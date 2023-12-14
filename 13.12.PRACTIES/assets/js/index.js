@@ -27,7 +27,7 @@ function drawTable(data) {
         <td>
       <a href="form.html?id=${element.id}" class="edit-btn">Edit</a>
         <a href=""  class="delete-btn" onclick=deleteBtn(${element.id},this)> Delete</a>
-         <button class="add-btn" onclick=addBtn("${element.id}")>Add Fav</button>
+         <button class="add-btn" onclick=addBtn(${element.id})>Add Fav</button>
         </td>
         `;
     tBody.append(trElem);
