@@ -2,13 +2,20 @@ const search = document.querySelector("#search");
 const cards = document.querySelector(".cards");
 const select = document.querySelector("select");
 const button = document.querySelector(".btn");
+const sectionBtn = document.querySelector(".section-btn");
+const icon = document.querySelector(".fa-magnifying-glass");
 
 const BASE_URL = "https://restcountries.com/v2";
+
+let arr = [];
+let copyArr = [];
 
 async function getAllData(endpoint) {
   const res = await axios(`${BASE_URL}/${endpoint}`);
   //   console.log(res.data);
   let data = res.data;
+  arr = res.data;
+  copyArr = structuredClone(arr);
   drawCards(data);
 }
 getAllData("all");
@@ -54,9 +61,6 @@ select.addEventListener("change", async function (e) {
   }
 });
 
-
-
-
 if (localStorage.getItem("darkMode") == "true") {
   document.body.classList.add("dark-mode");
 }
@@ -68,4 +72,22 @@ button.addEventListener("click", function () {
   } else {
     localStorage.setItem("darkMode", true);
   }
+});
+
+
+
+sectionBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  let sorted;
+  if (sectionBtn.innerText === "Ascending") {
+    sectionBtn.innerText = "Descending";
+    sorted = arr.sort((a, b) => a.name.localeCompare(b.name));
+  } else if (sectionBtn.innerText === "Descending") {
+    sectionBtn.innerText = "Default";
+    sorted = arr.sort((a, b) => b.name.localeCompare(a.name));
+  } else {
+    sectionBtn.innerText = "Ascending";
+    sorted = copyArr;
+  }
+  drawCards(sorted);
 });

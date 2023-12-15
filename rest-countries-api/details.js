@@ -1,5 +1,6 @@
 let countryName = new URLSearchParams(window.location.search).get("name");
 const section = document.querySelector(".details");
+const btn = document.querySelector(".btn");
 const button = document.createElement("button");
 button.innerText = "Go Back";
 
@@ -37,3 +38,16 @@ detailsData();
 function goBack() {
   window.history.back();
 }
+
+if (localStorage.getItem("darkMode") == "true") {
+  document.body.classList.add("dark-mode");
+}
+
+btn.addEventListener("click", function () {
+  document.body.classList.toggle("dark-mode");
+  if (localStorage.getItem("darkMode") === "true") {
+    localStorage.setItem("darkMode", false);
+  } else {
+    localStorage.setItem("darkMode", true);
+  }
+});
