@@ -1,0 +1,94 @@
+#contact-section {
+  padding: 2rem 0;
+  .contact-section {
+    .texts {
+      text-align: center;
+      color: #1b745e;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 2rem;
+      p {
+        font-style: italic;
+        font-size: 16px;
+      }
+      h1 {
+        font-size: 30px;
+      }
+    }
+    .contact-cards {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .contact-card {
+        width: 30%;
+        padding: 30px 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: #1b745e;
+        h4{
+            font-size: 25px;
+        }
+        nav {
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            li {
+              a {
+                font-style: italic;
+                color: #1b745e;
+                &:hover {
+                  color: rgb(81, 15, 15);
+                }
+              }
+            }
+          }
+        }
+      }
+      .card1 {
+        background-color: #d8e3d5;
+      }
+      .card2 {
+        background-color: #fff;
+      }
+      .card3 {
+        background-color: #fef1e6;
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .contact-section {
+      .contact-cards {
+        flex-direction: column;
+        .contact-card{
+            width: 100%;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    .contact-section {
+      .contact-cards {
+        flex-direction: column;
+        .contact-card{
+            width: 100%;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    .contact-section {
+      .contact-cards {
+        flex-direction: column;
+        .contact-card{
+            width: 100%;
+        }
+      }
+    }
+  }
+}

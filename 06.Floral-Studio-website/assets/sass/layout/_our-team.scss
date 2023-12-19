@@ -1,0 +1,120 @@
+#our-team {
+  padding: 2rem 0;
+  .our-team {
+    .texts {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      color: #0c5b47;
+      p {
+        font-style: italic;
+        font-size: 18px;
+      }
+      h1 {
+        font-size: 46px;
+      }
+    }
+    .team-cards {
+      @include flexBox(center);
+      text-align: center;
+      color: #0c5b47;
+      .team-card {
+        .image {
+          position: relative;
+          width: 100%;
+          img {
+            width: 100%;
+          }
+
+          .icons {
+            position: absolute;
+            top: 5px;
+            left: 10px;
+            display: none;
+            i {
+              padding: 8px;
+              background-color: white;
+              color: #0c5b47;
+              border-radius: 50%;
+              font-size: 20px;
+              cursor: pointer;
+            }
+          }
+          &:hover .icons {
+            display: block;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+          }
+        }
+        h5 {
+          margin: 10px 0;
+          font-size: 22px;
+        }
+        p {
+          font-size: 16px;
+          font-style: italic;
+        }
+      }
+    }
+  }
+  .our-team-bottom {
+    margin-top: 2rem;
+    @include flexBox(center);
+    text-align: center;
+    color: #0c5b47;
+    gap: 20px;
+    .our-team-left {
+      width: 50%;
+      h1 {
+        font-size: 46px;
+      }
+      img {
+        width: 200px;
+      }
+    }
+    .our-team-right {
+      width: 50%;
+      p {
+        font-size: 16px;
+
+        letter-spacing: 1.5px;
+        line-height: 1.2rem;
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .our-team {
+      .team-cards {
+        flex-direction: column;
+      }
+    }
+    .our-team-bottom {
+      flex-direction: column-reverse;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    .our-team {
+      .team-cards {
+        flex-direction: column;
+      }
+    }
+    .our-team-bottom {
+      flex-direction: column-reverse;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    .our-team {
+      .team-cards {
+        flex-direction: column;
+      }
+    }
+    .our-team-bottom {
+      flex-direction: column-reverse;
+    }
+  }
+}

@@ -32,28 +32,29 @@
           gap: 20px;
           align-items: center;
           color: #0c5b47;
-          i{
+          i {
             font-size: 30px;
             cursor: pointer;
           }
-          h3{
+          h3 {
             font-size: 22px;
             font-style: italic;
-          }p{
+          }
+          p {
             font-size: 18px;
             font-style: italic;
           }
-          button{
+          button {
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
             background-color: #d8e3d5;
             border: 1px solid #d8e3d5;
             transition: all 0.5s;
-            &:hover{
-                background-color: #0d5543;
-                border: 1px solid #0c5b47;
-                color: white;
+            &:hover {
+              background-color: #0d5543;
+              border: 1px solid #0c5b47;
+              color: white;
             }
           }
         }

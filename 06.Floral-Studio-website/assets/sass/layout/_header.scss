@@ -5,6 +5,7 @@ header {
   z-index: 111;
   width: 100%;
   position: fixed;
+
   .navbar {
     @include flexBox();
     h1 {
@@ -19,6 +20,10 @@ header {
         li {
           a {
             color: #ebdaea;
+            &:hover {
+              border-bottom: 1px solid orange;
+              color: orange;
+            }
           }
         }
       }
@@ -26,6 +31,7 @@ header {
     .fa-bars {
       font-size: 20px;
       display: none;
+      cursor: pointer;
     }
   }
 
@@ -35,9 +41,9 @@ header {
         display: none;
         position: fixed;
         width: 100%;
-        top: 80px;
+        top: 60px;
         left: 0;
-        z-index: 1;
+        // z-index: 1;
         background-color: #226c59;
         ul {
           flex-direction: column;
@@ -51,7 +57,10 @@ header {
       }
       .fa-bars {
         display: block;
-       
+
+      }
+      .fa-xmark {
+        cursor: pointer;
       }
     }
   }

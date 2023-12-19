@@ -18,17 +18,24 @@
       type="image/x-icon"
       href="https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/512x512/plain/flower.png"
     />
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
     />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
 
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+    ></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
@@ -44,11 +51,8 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/sass/main.css" />
+
+    <link rel="stylesheet" href="./assets/sass/app.css" />
     <title>Document</title>
   </head>
   <body>
@@ -58,11 +62,11 @@
           <h1>Floral Studio</h1>
           <nav class="nav">
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Contacts</a></li>
+              <li><a href="#florist-section">Home</a></li>
+              <li><a href="#services-section">About us</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#our-clients">Contacts</a></li>
             </ul>
           </nav>
           <i class="fa-solid fa-bars" id="menu"></i>
@@ -350,37 +354,288 @@
       style="background-image: url(./assets/image/background1.jpg)"
     >
       <div class="container">
+        <div class="pricing-search">
+          <form action="">
+            <input type="text" placeholder="Search..." id="search" />
+          </form>
+          <button class="sort-btn">Ascending</button>
+          <button class="load-more">Load More</button>
+        </div>
         <div class="pricing">
           <div class="texts">
             <p>Devoted to wonderful beauty</p>
             <h1>Flowers Pricing</h1>
           </div>
           <div class="products">
-            <div class="products-card">
+            <!-- <div class="products-card">
               <img src="./assets/image/b2.jpg" alt="" />
               <h3>Title</h3>
               <p>price</p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS-PRICING -->
+    <section
+      id="event-pricing"
+      style="background-image: url(./assets/image/background1.jpg)"
+    >
+      <div class="container">
+        <div class="event-pricing">
+          <div class="text">
+            <p>Devoted to wonderful beauty</p>
+            <h1>Events Pricing</h1>
+          </div>
+          <div class="event-pricing-cards">
+            <div class="event-pricing-card">
+              <p>$16 <span>per table</span></p>
+              <h5>Birthday Events</h5>
+              <p class="italic">
+                Lorem ipsum dolor sit amet laudem partem perfecto per
+              </p>
+              <button>Show Now</button>
+            </div>
+            <div class="event-pricing-card">
+              <p>$16 <span>per table</span></p>
+              <h5>Birthday Events</h5>
+              <p class="italic">
+                Lorem ipsum dolor sit amet laudem partem perfecto per
+              </p>
+              <button>Show Now</button>
+            </div>
+            <div class="event-pricing-card">
+              <p>$16 <span>per table</span></p>
+              <h5>Birthday Events</h5>
+              <p class="italic">
+                Lorem ipsum dolor sit amet laudem partem perfecto per
+              </p>
+              <button>Show Now</button>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- 
+    OUR-TEAM-SECTION -->
+    <section id="our-team">
+      <div class="container">
+        <div class="our-team">
+          <div class="texts">
+            <p>Contacts</p>
+            <h1>Our Team</h1>
+          </div>
+          <div class="team-cards">
+            <div class="team-card">
+              <div class="image">
+                <img src="./assets/image/portr1.jpg" alt="" />
+                <div class="icons">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </div>
+
+              <h5>Velva Kopf</h5>
+              <p>Biologist</p>
+            </div>
+            <div class="team-card">
+              <div class="image">
+                <img src="./assets/image/portr2.jpg" alt="" />
+                <div class="icons">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </div>
+              <h5>Velva Kopf</h5>
+              <p>Biologist</p>
+            </div>
+            <div class="team-card">
+              <div class="image">
+                <img src="./assets/image/portr3.jpg" alt="" />
+                <div class="icons">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </div>
+              <h5>Velva Kopf</h5>
+              <p>Biologist</p>
+            </div>
+          </div>
+        </div>
+        <div class="our-team-bottom">
+          <div class="our-team-left">
+            <h1>The fine makers of <br />flora</h1>
+            <img src="./assets/image/signature.png" alt="" />
+          </div>
+          <div class="our-team-right">
+            <p>
+              Lorem ipsum dolor sit amet, pri autem nemore bonorum te. Autem
+              fierent ullamcorper ius no, nec ea quodsi invenire. Pri facilisi
+              eleifend ad, ad eos scripta oblique. Vix cu oratio.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 
+    OUR-CLIENTS-SECTION -->
+
+    <section id="our-clients">
+      <div class="container">
+        <div class="our-clients">
+          <h1>Our Clients</h1>
+          <div class="cards">
+            <div class="card">
+              <img src="./assets/image/1.png" alt="" />
+            </div>
+            <div class="card">
+              <img src="./assets/image/6.png" alt="" />
+            </div>
+            <div class="card">
+              <img src="./assets/image/3.png" alt="" />
+            </div>
+            <div class="card">
+              <img src="./assets/image/4.png" alt="" />
+            </div>
+            <div class="card">
+              <img src="./assets/image/5.png" alt="" />
+            </div>
+            <div class="card">
+              <img src="./assets/image/6.png" alt="" />
+            </div>
+            <div class="card">
+              <img src="./assets/image/1.png" alt="" />
+            </div>
+            <div class="card">
+              <img src="./assets/image/3.png" alt="" />
+            </div>
+            <div class="card">
+              <img src="./assets/image/6.png" alt="" />
+            </div>
+            <div class="card">
+              <img src="./assets/image/4.png" alt="" />
+            </div>
+            <div class="card">
+              <img src="./assets/image/1.png" alt="" />
+            </div>
+            <div class="card">
+              <img src="./assets/image/3.png" alt="" />
+            </div>
+            <div class="card">
+              <img src="./assets/image/5.png" alt="" />
+            </div>
+            <div class="card">
+              <img src="./assets/image/6.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTS-SECTION -->
+
+    <section id="contact-section">
+      <div class="container">
+        <div class="contact-section">
+          <div class="texts">
+            <p>Contacs</p>
+            <h1>Where to find</h1>
+          </div>
+          <div class="contact-cards">
+            <div class="contact-card card1">
+              <h4>Toronto</h4>
+              <nav>
+                <ul>
+                  <li>Say hello</li>
+                  <li><a href="#">email@site.com</a></li>
+                  <li>Phone</li>
+                  <li><a href="#">+369 35 353562 3544</a></li>
+                  <li>Address</li>
+                  <li><a href="#">4th Avenue 4856, New York</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="contact-card card2">
+              <h4>Paris</h4>
+              <nav>
+                <ul>
+                  <li>Say hello</li>
+                  <li><a href="#">email@site.com</a></li>
+                  <li>Phone</li>
+                  <li><a href="#">+369 35 353562 3544</a></li>
+                  <li>Address</li>
+                  <li><a href="#">4th Avenue 4856, New York</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="contact-card card3">
+              <h4>Barcelona</h4>
+              <nav>
+                <ul>
+                  <li>Say hello</li>
+                  <li><a href="#">email@site.com</a></li>
+                  <li>Phone</li>
+                  <li><a href="#">+369 35 353562 3544</a></li>
+                  <li>Address</li>
+                  <li><a href="#">4th Avenue 4856, New York</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER-SECTION -->
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="footer-input">
+            <img src="./assets/image/signature.png" alt="" />
+            <div class="input-btn">
+              <input type="text" placeholder="Your Email" />
+              <button>Send</button>
+            </div>
+          </div>
+          <div class="about-footer">
+            <h1>About</h1>
+            <nav>
+              <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">Our Partners</a></li>
+                <li><a href="#">Our Services</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="about-footer">
+            <h1>Contact</h1>
+            <nav>
+              <ul>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">FAQ Page</a></li>
+                <li><a href="#">About Me</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="about-footer">
+            <h1>Follow Us</h1>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="to-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./owl.carousel.js"></script>
-    <script src="./owl.carousel.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="jquery.min.js"></script>
-    <script src="owlcarousel/owl.carousel.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/js/main.js"></script>
+    <script defer src="./assets/js/main.js"></script>
   </body>
 </html>

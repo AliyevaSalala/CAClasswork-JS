@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/sass/app.css" />
+    <style>
+      section {
+        padding: 2rem 0;
+      }
+      .details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .details-left {
+        width: 50%;
+      }
+      .details-left img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      .details-right {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-left: 30px;
+      }
+      .details-right p {
+        font-style: italic;
+      }
+      .details-right a {
+        padding: 10px 15px;
+        background-color: teal;
+        color: white;
+        border: 1px solid transparent;
+      }
+      .details-right a:hover {
+        background-color: transparent;
+        border: 1px solid teal;
+        color: teal;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <section style="height: 100vh">
+      <div class="container">
+        <div class="details">
+          <!-- <div class="details-left">
+            <img src="./assets/image/sl1-967x725.jpg" alt="" />
+          </div>
+          <div class="details-right">
+            <h1>Title</h1>
+            <p>price</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              voluptas ducimus corrupti facilis sit! Non fugit doloribus nemo
+              magnam eum quam, nostrum eos libero aliquam consequatur ex
+              cupiditate fuga omnis?
+            </p>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/details.js"></script>
+  </body>
+</html>

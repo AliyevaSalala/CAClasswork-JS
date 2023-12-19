@@ -1,0 +1,29 @@
+#our-clients {
+  padding: 2rem 0;
+  background-color: #e0ecdc;
+  .our-clients {
+    h1 {
+      text-align: center;
+      margin: 1.5rem 0;
+      color: #0c5b47;
+      font-size: 46px;
+    }
+    .cards {
+      display: flex;
+    //   justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      .card {
+        width: 150px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: none;
+        img {
+          width: 100%;
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+}
