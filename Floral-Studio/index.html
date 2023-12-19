@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    ></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/sass/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <h1>Floral Studio</h1>
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+          </nav>
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <section id="banner">
+      <div class="banner">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <!-- <div class="container"> -->
+          <div class="carousel-inner">
+            <div
+              class="carousel-item active bg-image1"
+              style="
+                background-image: url(./assets/image/sl1-967x725.jpg);
+                background-position: center;
+                background-size: cover;
+                height: 100vh;
+              "
+            >
+              <div class="banner-text">
+                <p>Floral</p>
+                <h1>Excellent bouquets for you</h1>
+              </div>
+            </div>
+
+            <div
+              class="carousel-item bg-image2"
+              style="
+                background-image: url(./assets/image/sl7.jpg);
+                background-position: center;
+                background-size: cover;
+                height: 100vh;
+              "
+            >
+              <div class="banner-text">
+                <p>Floral</p>
+                <h1>Excellent bouquets for you</h1>
+              </div>
+            </div>
+            <div
+              class="carousel-item"
+              style="
+                background-image: url(./assets/image/sl4.jpg);
+                background-position: center;
+                background-size: cover;
+                height: 100vh;
+              "
+            >
+              <div class="banner-text">
+                <p>Floral</p>
+                <h1>Excellent bouquets for you</h1>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+    FLORIST-SECTION -->
+    <section id="florist-section">
+      <div class="container">
+        <div class="florist">
+          <div class="florist-left">
+            <h1>
+              Local Florist Just <br />
+              For You
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, pri autem nemore bonorum te. Autem
+              fierent ullamcorper ius no. Te tibique intellegam mediocritatem
+              his, est quis.
+            </p>
+            <p class="mary">Mary Byrd, owner</p>
+            <img src="./assets/image/signature.png" alt="" />
+          </div>
+          <div class="florist-right">
+            <div class="image2">
+              <img src="./assets/image/fl2.jpg" alt="" class="second" />
+            </div>
+            <div class="image1">
+              <img src="./assets/image/fl1.jpg" alt="" class="first" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES-SECTION -->
+    <section
+      id="services-section"
+      style="
+        background-image: url(./assets/image/background2.jpg);
+        background-position: center;
+        background-size: cover;
+      "
+    >
+      <div class="container">
+        <div class="services">
+          <p>Services</p>
+          <h1>
+            We offer a variety of floral services, from unique <br />
+            bouquets to event decoration.
+          </h1>
+
+          <div class="owl-carousel owl-theme services-carousel">
+            <div class="item">
+              <img src="./assets/image/b2.jpg" alt="" />
+              <p>Decoration</p>
+            </div>
+            <div class="item">
+              <div>
+                <img src="./assets/image/b3.jpg" alt="" />
+                <p>Floral Design</p>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <img src="./assets/image/b4.jpg" alt="" />
+                <p>Events</p>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <img src="./assets/image/b2.jpg" alt="" />
+                <p>Decoration</p>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <img src="./assets/image/b3.jpg" alt="" />
+                <p>Floral Design</p>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <img src="./assets/image/b4.jpg" alt="" />
+                <p>Events</p>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <img src="./assets/image/b2.jpg" alt="" />
+                <p>Decoration</p>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <img src="./assets/image/b3.jpg" alt="" />
+                <p>Floral Design</p>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <img src="./assets/image/b4.jpg" alt="" />
+                <p>Events</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./owl.carousel.js"></script>
+    <script src="./owl.carousel.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+#florist-section {
+  padding: 2rem 0;
+  .florist {
+    @include flexBox(center);
+    gap: 10px;
+    .florist-left {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      h1 {
+        color: #0c5b47;
+        font-size: 46px;
+      }
+      p {
+        color: #0c5b47;
+        font-size: 16px;
+        width: 300px;
+      }
+      .mary {
+        font-style: italic;
+      }
+      img {
+        width: 200px;
+      }
+    }
+    .florist-right {
+      width: 50%;
+      height: 100%;
+      position: relative;
+      padding: 0 16px;
+      display: flex;
+      justify-content: center;
+    }
+    img {
+      width: 200px;
+      border-radius: 10px;
+    }
+    .image1 {
+        position: relative;
+        left: -30px;
+    }
+    .image2 {
+      position: relative;
+      top: 40px;
+      left: 20px;
+      z-index: 1;
+    }
+  }
+}

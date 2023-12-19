@@ -1,0 +1,19 @@
+#banner {
+  .banner {
+    .banner-text {
+      @include flexBox(center);
+      flex-direction: column;
+      gap: 20px;
+      color: white;
+      height: 100vh;
+      color: #226c59;
+      p{
+        font-style: italic;
+        font-size: 18px;
+      }
+      h1{
+      font-size: 46px;
+      }
+    }
+  }
+}

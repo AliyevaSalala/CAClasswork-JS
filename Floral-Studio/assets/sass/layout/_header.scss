@@ -1,0 +1,30 @@
+header {
+  background-color: rgba($color: #226c59, $alpha: 0.8);
+  padding: 1rem 0;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  .navbar {
+    @include flexBox();
+    h1 {
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+    }
+    nav {
+      ul {
+        display: flex;
+        gap: 20px;
+        li {
+          a {
+            color: #d8a3d5;
+          }
+        }
+      }
+    }
+    .fa-bars{
+        font-size: 20px;
+        display: none;
+    }
+  }
+}
