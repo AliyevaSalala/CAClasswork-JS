@@ -1,11 +1,12 @@
 @import "./base/reset";
-@import "./utilits/variables";
 @import "./base/typograpy";
 @import "./utilits/mixin";
 @import "./base/global";
-@import "./components/button";
 @import "./layout/header";
 @import "./layout/florist";
 @import "./layout/services";
+@import "./layout/sale";
+@import "./layout/portfolio";
+@import "./layout/pricing";
 @import "./layout/footer";
 @import "./page/carousel";

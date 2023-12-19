@@ -2,14 +2,15 @@ header {
   background-color: rgba($color: #226c59, $alpha: 0.8);
   padding: 1rem 0;
   position: absolute;
-  z-index: 1;
+  z-index: 111;
   width: 100%;
+  position: fixed;
   .navbar {
     @include flexBox();
     h1 {
       font-size: 22px;
       font-weight: bold;
-      color: #fff;
+      color: #ffffffd7;
     }
     nav {
       ul {
@@ -17,14 +18,41 @@ header {
         gap: 20px;
         li {
           a {
-            color: #d8a3d5;
+            color: #ebdaea;
           }
         }
       }
     }
-    .fa-bars{
-        font-size: 20px;
+    .fa-bars {
+      font-size: 20px;
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .navbar {
+      nav {
         display: none;
+        position: fixed;
+        width: 100%;
+        top: 80px;
+        left: 0;
+        z-index: 1;
+        background-color: #226c59;
+        ul {
+          flex-direction: column;
+          height: 30vh;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      nav.show {
+        display: block;
+      }
+      .fa-bars {
+        display: block;
+       
+      }
     }
   }
 }
