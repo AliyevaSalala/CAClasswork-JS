@@ -43,29 +43,40 @@
       "image": "./assets/image/b2.jpg"
     },
     {
-      "id": 7,
-      "title": "Mazus",
-      "price": 45,
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam maxime",
-      "image": "./assets/image/b2.jpg"
+      "title": "Tara Mccall",
+      "price": "72",
+      "description": "Facere dolor sint e",
+      "id": 7
     },
     {
-      "title": "Anne Rivers",
-      "price": "91",
-      "description": "Et molestiae id dolo",
+      "title": "Tatum Workman",
+      "price": "30",
+      "description": "Provident facilis a",
       "id": 8
     },
     {
-      "title": "Uta Moreno",
-      "price": "317",
-      "description": "Modi sit qui culpa ",
+      "title": "Ulla Carpenter",
+      "price": "378",
+      "description": "Eos corrupti aut it",
       "id": 9
     },
     {
-      "title": "Grady Wilder",
-      "price": "499",
-      "description": "Aut sint est commod",
+      "title": "Jayme Christian",
+      "price": "128",
+      "description": "Quis id consectetur",
+      "id": 10
+    },
+    {
+      "title": "Wang Schmidt",
+      "price": "228",
+      "description": "Sint odio odit velit",
       "id": 11
+    },
+    {
+      "title": "Winifred Rivers",
+      "price": "447",
+      "description": "Elit error voluptat",
+      "id": 12
     }
   ]
 }

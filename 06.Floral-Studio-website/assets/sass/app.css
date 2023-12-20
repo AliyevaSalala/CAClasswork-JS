@@ -621,9 +621,21 @@ header .navbar .fa-bars {
   gap: 10px;
   text-align: center;
   color: #0c5b47;
+  position: relative;
 }
 #pricing .pricing .products .products-card img {
   width: 100%;
+}
+#pricing .pricing .products .products-card a {
+  color: #0c5b47;
+  font-style: italic;
+}
+#pricing .pricing .products .products-card i {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-size: 25px;
+  color: rgba(255, 0, 0, 0.711);
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   #pricing .pricing-search {
@@ -956,9 +968,6 @@ footer .footer {
 footer .footer .footer-input img {
   width: 200px;
 }
-footer .footer .footer-input .input-btn {
-  position: relative;
-}
 footer .footer .footer-input .input-btn input {
   padding: 10px 20px;
   background-color: #e0ecdc;
@@ -974,7 +983,6 @@ footer .footer .footer-input .input-btn input::placeholder {
 }
 footer .footer .footer-input .input-btn button {
   padding: 8px 20px;
-  position: absolute;
   background-color: #d8e3d5;
   border: 1px solid #d8e3d5;
   color: #10634e;
@@ -1046,7 +1054,7 @@ footer .footer .about-footer nav ul li a:hover {
   flex-direction: column;
   gap: 20px;
   color: white;
-  padding: 2 0rem;
+  padding: 3rem;
   color: #226c59;
 }
 #banner .banner .banner-text p {

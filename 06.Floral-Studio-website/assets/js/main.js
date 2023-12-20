@@ -32,6 +32,8 @@ let limit = 3;
 let arr = [];
 let productCopy = [];
 
+let favorites = getFavoritesFromLocaleStorages();
+
 async function getAllData() {
   const res = await axios(`${BASE_URL}`);
   // console.log(res.data);
@@ -58,6 +60,12 @@ function drawCards(data) {
 
     const aEelemet = document.createElement("a");
     aEelemet.href = `details.html?id=${element.id}`;
+    aEelemet.textContent = "Read More";
+    const iconElement = document.createElement("i");
+
+    const bool = favorites.find((item) => item.id === element.id);
+
+    iconElement.className = !bool ? "fa-regular fa-heart" : "fa-solid fa-heart";
 
     const imgEelement = document.createElement("img");
     imgEelement.src = element.image;
@@ -66,11 +74,52 @@ function drawCards(data) {
     const productsPriceElement = document.createElement("p");
     productsPriceElement.textContent = ` $ ${element.price}.00`;
 
-    divElement.append(imgEelement, productsTitleEelement, productsPriceElement);
-    aEelemet.append(divElement);
-    products.append(aEelemet);
+    iconElement.addEventListener("click", function () {
+      this.className === "fa-regular fa-heart"
+        ? (this.className = "fa-solid fa-heart")
+        : (this.className = "fa-regular fa-heart");
+
+      let favoriteProducts = getFavoritesFromLocaleStorages();
+
+      const favIndex = favoriteProducts.findIndex(
+        (item) => item.id === element.id
+      );
+
+      if (favIndex === -1) {
+        favoriteProducts.push(element);
+      } else {
+        favoriteProducts.splice(favIndex, 1);
+      }
+
+      setProductToLocaleStorage(favoriteProducts);
+    });
+
+    // divElement.append(imgEelement, productsTitleEelement, productsPriceElement);
+    // aEelemet.append(divElement);
+    // products.append(aEelemet);
+    divElement.append(
+      imgEelement,
+      productsTitleEelement,
+      productsPriceElement,
+      aEelemet,
+      iconElement
+    );
+    products.append(divElement);
   });
 }
+
+
+function setProductToLocaleStorage(products) {
+  localStorage.setItem("favs", JSON.stringify(products));
+}
+
+function getFavoritesFromLocaleStorages() {
+  return JSON.parse(localStorage.getItem("favs")) ?? [];
+}
+
+
+
+
 
 search.addEventListener("input", async function (e) {
   const res = await axios(`${BASE_URL}`);
