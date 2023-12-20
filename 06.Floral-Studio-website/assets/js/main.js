@@ -19,14 +19,12 @@ $(".owl-carousel").owlCarousel({
   },
 });
 
-
 const menuIcon = document.querySelector("#menu");
 const nav = document.querySelector(".nav");
 const products = document.querySelector(".products");
 const search = document.querySelector("#search");
 const sortBtn = document.querySelector(".sort-btn");
 const loadMore = document.querySelector(".load-more");
-
 
 const BASE_URL = "http://localhost:8080/products";
 let limit = 3;
@@ -66,7 +64,7 @@ function drawCards(data) {
     const productsTitleEelement = document.createElement("h3");
     productsTitleEelement.textContent = element.title;
     const productsPriceElement = document.createElement("p");
-    productsPriceElement.textContent = element.price;
+    productsPriceElement.textContent = ` $ ${element.price}.00`;
 
     divElement.append(imgEelement, productsTitleEelement, productsPriceElement);
     aEelemet.append(divElement);

@@ -1,0 +1,51 @@
+#admin {
+  padding: 2rem 0;
+  .admin {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    .modal-admin {
+      form {
+        label {
+          font-style: italic;
+          padding: 8px 0;
+        }
+        input {
+          padding: 8px 15px;
+          border-radius: 5px;
+          box-shadow: 5px 5px 5px #808080;
+          border: none;
+          outline: none;
+        }
+      }
+    }
+    table,
+    th,
+    td {
+      border: 2px solid #226c59;
+      padding: 5px 15px;
+      color: #226c59;
+    }
+    tr {
+      transition: all 0.5s;
+      &:hover {
+        background-color: #b1fae8;
+      }
+      td {
+        .icons {
+          display: flex;
+          gap: 20px;
+          i {
+            cursor: pointer;
+          }
+        }
+        img {
+          width: 100px;
+          height: 70px;
+        }
+      }
+    }
+  }
+}

@@ -1,40 +1,71 @@
 {
-    "products": [
-      {
-        "id": 1,
-        "title": "Dahlia",
-        "price": 55.0,
-        "image": "./assets/image/b2.jpg"
-      },
-      {
-        "id": 2,
-        "title": "Mazus",
-        "price": 30.0,
-        "image": "./assets/image/b3.jpg"
-      },
-      {
-        "id": 3,
-        "title": "Pansies",
-        "price": 50.0,
-        "image": "./assets/image/b4.jpg"
-      },
-      {
-        "id": 4,
-        "title": "Dahlia",
-        "price": 80.0,
-        "image": "./assets/image/b3.jpg"
-      },
-      {
-        "id": 5,
-        "title": "Mazus",
-        "price": 45.0,
-        "image": "./assets/image/b2.jpg"
-      },
-      {
-        "id": 6,
-        "title": "Pansies",
-        "price": 60.0,
-        "image": "./assets/image/b4.jpg"
-      }
-    ]
-  }
+  "products": [
+    {
+      "id": 1,
+      "title": "Dahlia",
+      "price": 55,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam maxime",
+      "image": "./assets/image/b2.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Mazus",
+      "price": 30,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam maxime",
+      "image": "./assets/image/b3.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Pansies",
+      "price": 50,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam maxime",
+      "image": "./assets/image/b4.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Dahlia",
+      "price": 80,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam maxime",
+      "image": "./assets/image/b3.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Mazus",
+      "price": 45,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam maxime",
+      "image": "./assets/image/b2.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Mazus",
+      "price": 45,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam maxime",
+      "image": "./assets/image/b2.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Mazus",
+      "price": 45,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam maxime",
+      "image": "./assets/image/b2.jpg"
+    },
+    {
+      "title": "Anne Rivers",
+      "price": "91",
+      "description": "Et molestiae id dolo",
+      "id": 8
+    },
+    {
+      "title": "Uta Moreno",
+      "price": "317",
+      "description": "Modi sit qui culpa ",
+      "id": 9
+    },
+    {
+      "title": "Grady Wilder",
+      "price": "499",
+      "description": "Aut sint est commod",
+      "id": 11
+    }
+  ]
+}

@@ -4,49 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/sass/app.css" />
-    <style>
-      section {
-        padding: 2rem 0;
-      }
-      .details {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      .details-left {
-        width: 50%;
-      }
-      .details-left img {
-        width: 100%;
-        border-radius: 10px;
-      }
-      .details-right {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-        margin-left: 30px;
-      }
-      .details-right p {
-        font-style: italic;
-      }
-      .details-right a {
-        padding: 10px 15px;
-        background-color: teal;
-        color: white;
-        border: 1px solid transparent;
-      }
-      .details-right a:hover {
-        background-color: transparent;
-        border: 1px solid teal;
-        color: teal;
-      }
-    </style>
-    <title>Document</title>
+
+    <title>Details Page</title>
   </head>
   <body>
+    <header id="details-header">
+      <div class="container">
+        <div class="navbar">
+          <h1>Floral Studio</h1>
+          <nav class="nav">
+            <ul>
+              <li><a href="#florist-section">Home</a></li>
+              <li><a href="#services-section">About us</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#our-clients">Contacts</a></li>
+            </ul>
+          </nav>
+          <i class="fa-solid fa-bars" id="menu"></i>
+        </div>
+      </div>
+    </header>
     <section style="height: 100vh">
       <div class="container">
         <div class="details">

@@ -572,6 +572,7 @@ header .navbar .fa-bars {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  margin-top: 2rem;
 }
 #pricing .pricing-search input {
   padding: 8px 15px;
@@ -1045,7 +1046,7 @@ footer .footer .about-footer nav ul li a:hover {
   flex-direction: column;
   gap: 20px;
   color: white;
-  height: 100vh;
+  padding: 2 0rem;
   color: #226c59;
 }
 #banner .banner .banner-text p {
@@ -1054,4 +1055,121 @@ footer .footer .about-footer nav ul li a:hover {
 }
 #banner .banner .banner-text h1 {
   font-size: 46px;
+}
+
+#details-header {
+  padding: 2rem 0;
+  background-color: rgba(34, 108, 89, 0.8);
+}
+#details-header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#details-header .navbar h1 {
+  font-size: 22px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.8431372549);
+}
+#details-header .navbar nav ul {
+  display: flex;
+  gap: 20px;
+}
+#details-header .navbar nav ul li a {
+  color: #ebdaea;
+}
+#details-header .navbar nav ul li a:hover {
+  border-bottom: 1px solid orange;
+  color: orange;
+}
+#details-header .navbar .fa-bars {
+  font-size: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+section {
+  padding: 2rem 0;
+}
+section .details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .details .details-left {
+  width: 50%;
+  padding: 60px 0;
+}
+section .details .details-left .details-left img {
+  width: 100%;
+  border-radius: 10px;
+}
+section .details .details-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-left: 30px;
+}
+section .details .details-right .details-right p {
+  font-style: italic;
+}
+section .details .details-right a {
+  padding: 10px 15px;
+  background-color: teal;
+  color: white;
+  border: 1px solid transparent;
+}
+section .details .details-right a:hover {
+  background-color: transparent;
+  border: 1px solid teal;
+  color: teal;
+}
+
+#admin {
+  padding: 2rem 0;
+}
+#admin .admin {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+#admin .admin .modal-admin form label {
+  font-style: italic;
+  padding: 8px 0;
+}
+#admin .admin .modal-admin form input {
+  padding: 8px 15px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #808080;
+  border: none;
+  outline: none;
+}
+#admin .admin table,
+#admin .admin th,
+#admin .admin td {
+  border: 2px solid #226c59;
+  padding: 5px 15px;
+  color: #226c59;
+}
+#admin .admin tr {
+  transition: all 0.5s;
+}
+#admin .admin tr:hover {
+  background-color: #b1fae8;
+}
+#admin .admin tr td .icons {
+  display: flex;
+  gap: 20px;
+}
+#admin .admin tr td .icons i {
+  cursor: pointer;
+}
+#admin .admin tr td img {
+  width: 100px;
+  height: 70px;
 }/*# sourceMappingURL=app.css.map */
