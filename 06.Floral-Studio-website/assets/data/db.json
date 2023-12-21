@@ -1,13 +1,6 @@
 {
   "products": [
     {
-      "id": 1,
-      "title": "Dahlia",
-      "price": 55,
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam maxime",
-      "image": "./assets/image/b2.jpg"
-    },
-    {
       "id": 2,
       "title": "Mazus",
       "price": 30,
@@ -29,13 +22,6 @@
       "image": "./assets/image/b3.jpg"
     },
     {
-      "id": 5,
-      "title": "Mazus",
-      "price": 45,
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam maxime",
-      "image": "./assets/image/b2.jpg"
-    },
-    {
       "id": 6,
       "title": "Mazus",
       "price": 45,
@@ -43,40 +29,32 @@
       "image": "./assets/image/b2.jpg"
     },
     {
-      "title": "Tara Mccall",
-      "price": "72",
-      "description": "Facere dolor sint e",
-      "id": 7
+      "image": "./assets/image/portr1.jpg",
+      "title": "sebnem",
+      "price": "22",
+      "description": "Fugiat amet sint id",
+      "id": 17
     },
     {
-      "title": "Tatum Workman",
-      "price": "30",
-      "description": "Provident facilis a",
-      "id": 8
+      "image": "./assets/image/portr3.jpg",
+      "title": "gulnar",
+      "price": "21",
+      "description": "Et molestiae id dolo",
+      "id": 18
     },
     {
-      "title": "Ulla Carpenter",
-      "price": "378",
-      "description": "Eos corrupti aut it",
-      "id": 9
+      "image": "./assets/image/sl3-1050x700.jpg",
+      "title": "serife",
+      "price": "23",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam maxime",
+      "id": 19
     },
     {
-      "title": "Jayme Christian",
-      "price": "128",
-      "description": "Quis id consectetur",
-      "id": 10
-    },
-    {
-      "title": "Wang Schmidt",
-      "price": "228",
-      "description": "Sint odio odit velit",
-      "id": 11
-    },
-    {
-      "title": "Winifred Rivers",
-      "price": "447",
-      "description": "Elit error voluptat",
-      "id": 12
+      "image": "./assets/image/sl7.jpg",
+      "title": "Selale",
+      "price": "25",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam maxime",
+      "id": 20
     }
   ]
 }

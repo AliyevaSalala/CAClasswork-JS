@@ -7,7 +7,7 @@ const form = document.querySelector("form");
 const submitBtn = document.querySelector(".submit-btn");
 
 let editStatus = false;
-let editId;
+let editId = null;
 
 async function adminGetAllData() {
   const res = await axios(`${BASE_URL}`);
@@ -29,7 +29,7 @@ function drawTable(data) {
     <td>${element.description}</td>
  
     <td> <div class="icons"><i class="fa-solid fa-trash fa-beat-fade" onclick=deleteBtn("${element.id}",this)></i>
-    <i class="fa-solid fa-pen-to-square fa-beat-fade" onclick=editBtn("${element.id}",this)></i></div></td>
+    <i data-bs-toggle="modal" data-bs-target="#exampleModal" class="fa-solid fa-pen-to-square fa-beat-fade" onclick=editBtn("${element.id}",this)></i></div></td>
     `;
     tBody.append(trEelement);
   });
@@ -60,9 +60,10 @@ async function deleteBtn(id, btn) {
 form.addEventListener("submit", async function (e) {
   e.preventDefault();
   let obj = {
-    title: allInputs[0].value,
-    price: allInputs[1].value,
-    description: allInputs[2].value,
+    image: `./assets/image/${allInputs[0].value.split("\\")[2]}`,
+    title: allInputs[1].value,
+    price: allInputs[2].value,
+    description: allInputs[3].value,
   };
 
   if (!editStatus) {
@@ -76,8 +77,8 @@ form.addEventListener("submit", async function (e) {
       alert("bos buraxila bilmez!!!");
     }
   } else {
-    // submitBtn.innerText = "Submit";
-    await axios.patch(`${BASE_URL}/ ${editId}`, obj);
+    submitBtn.innerText = "Submit";
+    await axios.patch(`${BASE_URL}/${editId}`, obj);
   }
 
   // allInputs.forEach((element) => (element.value = ""));
@@ -86,18 +87,18 @@ form.addEventListener("submit", async function (e) {
 async function editBtn(id, btn) {
   editStatus = true;
   editId = id;
-  // submitBtn.innerText = "Edit";
+  submitBtn.innerText = "Edit";
   let res = await axios(`${BASE_URL}/${id}`);
 
-  allInputs[0].value = "";
-  allInputs[1].value = "";
-  allInputs[2].value = "";
+  // allInputs[1].value = "";
+  // allInputs[2].value = "";
+  // allInputs[3].value = "";
   let data = res.data;
 
   // console.log(allInputs[2]);
   // console.log(id);
 
-  allInputs[0].value = data.title;
-  allInputs[1].value = data.price;
-  allInputs[2].value = data.description;
+  allInputs[1].value = data.title;
+  allInputs[2].value = data.price;
+  allInputs[3].value = data.description;
 }

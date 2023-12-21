@@ -1,0 +1,23 @@
+#favorite {
+  // @include flexBox(center);
+  display: flex;
+  .products {
+    display: flex;
+    gap: 20px;
+    .products-card {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      color: #226c59;
+      img {
+        width: 100%;
+      }
+      a {
+        color: #226c59;
+        font-style: italic;
+      }
+    }
+  }
+}
