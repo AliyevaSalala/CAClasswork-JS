@@ -636,6 +636,10 @@ header .navbar .fa-bars {
   left: 10px;
   font-size: 25px;
   color: rgba(255, 0, 0, 0.711);
+  transition: all 0.5s;
+}
+#pricing .pricing .products .products-card i:hover {
+  transform: scale(1.2);
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   #pricing .pricing-search {
@@ -1196,6 +1200,7 @@ section .details .details-right a:hover {
   align-items: center;
   gap: 10px;
   color: #226c59;
+  position: relative;
 }
 #favorite .products .products-card img {
   width: 100%;
@@ -1203,4 +1208,15 @@ section .details .details-right a:hover {
 #favorite .products .products-card a {
   color: #226c59;
   font-style: italic;
+}
+#favorite .products .products-card i {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-size: 25px;
+  color: rgba(255, 0, 0, 0.711);
+  transition: all 0.5s;
+}
+#favorite .products .products-card i:hover {
+  transform: scale(1.5);
 }/*# sourceMappingURL=app.css.map */

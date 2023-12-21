@@ -40,20 +40,20 @@ async function deleteBtn(id, btn) {
     let res = await axios.delete(`${BASE_URL}/${id}`);
     btn.closest("tr").remove();
 
-    // Toastify({
-    //   text: "Deleted Successfully!",
-    //   duration: 3000,
-    //   destination: "https://github.com/apvarun/toastify-js",
-    //   // newWindow: true,
-    //   close: true,
-    //   // gravity: "top",
-    //   // position: "left",
-    //   // stopOnFocus: true,
-    //   style: {
-    //     background: "linear-gradient(to right, #00b09b, #96c93d)",
-    //   },
-    //   onClick: function () {},
-    // }).showToast();
+    Toastify({
+      text: "Deleted Successfully!",
+      duration: 3000,
+      destination: "https://github.com/apvarun/toastify-js",
+      // newWindow: true,
+      close: true,
+      // gravity: "top",
+      // position: "left",
+      // stopOnFocus: true,
+      style: {
+        background: "linear-gradient(to right, #00b09b, #96c93d)",
+      },
+      onClick: function () {},
+    }).showToast();
   }
 }
 
