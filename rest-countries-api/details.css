@@ -24,13 +24,19 @@ header {
   align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .header h1 {
+    font-size: 25px;
+  }
+}
+
 .header button {
   padding: 8px 15px;
   background-color: transparent;
   border: 1px solid transparent;
   cursor: pointer;
 }
-.header button{
+.header button {
   font-size: 20px;
 }
 
@@ -52,29 +58,41 @@ section {
   align-items: center;
 }
 
-.hero-banner-section-left{
-display: flex;
-gap: 40px;
+.hero-banner-section-left {
+  display: flex;
+  gap: 30px;
 }
-.text{
-    display: flex;
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.text span {
+  color: gray;
+}
+
+.dark-mode {
+  background-color: black;
+  color: #fff;
+}
+.dark-mode section {
+  background-color: black;
+}
+
+.dark-mode header button {
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .details {
     flex-direction: column;
-    gap: 15px;
-}
-.text span{
-    color: gray;
+    row-gap: 20px;
+  }
 }
 
-
-.dark-mode{
-  background-color: black;
-  color: #fff;
+@media screen and (max-width: 767px) {
+  .hero-banner-section-left {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
-.dark-mode section{
-  background-color: black;
-}
-
-.dark-mode header button{
-  color: #fff;
-}
-

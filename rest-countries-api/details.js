@@ -7,10 +7,10 @@ button.innerText = "Go Back";
 button.addEventListener("click", goBack);
 section.before(button);
 console.log(countryName);
-const BASE_URL = "https://restcountries.com/v2/";
+const BASE_URL = "https://restcountries.com/v2";
 
 async function detailsData() {
-  const res = await axios(`${BASE_URL}/name/${countryName}`);
+  const res = await axios.get(`${BASE_URL}/name/${countryName}`);
   console.log(res.data);
   section.innerHTML = `
     <div class="hero-banner-section-right">
